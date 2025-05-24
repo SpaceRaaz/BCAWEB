@@ -16,38 +16,46 @@
     box-sizing: border-box;
  }
  body{
-    font-family: "poppins",sans-serif;
+    font-family: 'Montserrat', sans-serif;
  }
 nav{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1e1e2f;
+    background-color: #ffffff;
     padding: 10px 40px;
     box-shadow: 0px 2px 5px rgba(o,0,0.1);
     position:sticky;
     top: 0;
     z-index:1000 ;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
 }
 nav div img{
     height: 50px;
     width: auto;
 }
+.search{
+    width: 18px;
+}
+.search:hover{
+    filter: brightness(0) saturate(100%) invert(18%) sepia(93%) saturate(7481%) hue-rotate(3deg) brightness(84%) contrast(119%);
+}
+
 nav ul{
     list-style-type: none;
     display: flex;
-   gap: 30px;
+    gap: 30px;
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight:500;
     padding: 8px 12px;
     border-radius: 5px;
     transition:0.5s ease;
 }
 nav ul li a:hover{
-    color: rgb(255, 213, 0);
+    color: rgb(255, 0, 0);
     font-weight: 500;
     
 
@@ -138,4 +146,75 @@ section h1{
     text-align: justify;
     
 }
+.virtual{
+    padding: 60px 20px;
+    background: linear-gradient(to right, #c9d0ff, #345680);
 
+}
+.footer {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-align: left;
+  flex: 1;
+}
+
+.skull {
+  width: 5vw;
+  min-width: 40px;
+  max-width: 60px;
+  margin: 0 auto;
+  filter: brightness(0) invert(1);
+
+}
+.p{
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-top: 10px;
+    transition: color 0.3s ease-in;
+    gap: 10px;
+}
+.skull:hover {
+  filter: contrast(1.2);
+  fill: #cff10b; /* blue color */
+  transform: scale(1.1);
+  transition: filter 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: flex-end;
+  padding-left: 12px;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+  justify-content: space-between;
+  gap: 10px;
+  transition: filter 0.3s ease-in, transform 0.3s ease-in;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+.social img:hover {
+    color: rgb(207, 207, 30);
+    transform: scale(1.25);
+    transition: 0.1s ease;
+}
