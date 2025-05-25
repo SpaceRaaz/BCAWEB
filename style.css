@@ -190,10 +190,10 @@ section h1{
     gap: 10px;
 }
 .skull:hover {
-  filter: contrast(1.2);
-  fill: #cff10b; /* blue color */
-  transform: scale(1.1);
-  transition: filter 0.3s ease-in, transform 0.3s ease-in;
+    filter: brightness(0) saturate(100%) invert(86%) sepia(97%) saturate(749%) hue-rotate(1deg) brightness(104%) contrast(104%);
+    transform: scale(1.25);
+    transition: 0.4s ease;
+
 }
 
 .social {
@@ -214,7 +214,7 @@ section h1{
   filter: brightness(0) invert(1);
 }
 .social img:hover {
-    color: rgb(207, 207, 30);
+    filter: brightness(0) saturate(100%) invert(86%) sepia(97%) saturate(749%) hue-rotate(1deg) brightness(104%) contrast(104%);
     transform: scale(1.25);
     transition: 0.1s ease;
 }
