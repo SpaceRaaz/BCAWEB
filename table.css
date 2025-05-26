@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..90');
 
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f9;
     margin: 0px;
     padding: 0px;
@@ -33,9 +33,6 @@ th{
     color: #fff;
     font-weight: 500;
     font: 2.2rem;
-}
-tr:nth-child(even){
-
 }
 tr:hover{
     background-color: rgb(234, 234, 234);

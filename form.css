@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-image: url(Image/ab.jpg);
+  background-size: cover;
+}
+    
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #610cd2;
+  text-shadow: 0 1px 1px #00000020;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #1a1919;
+  font-weight: 500;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-top: 8px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #610cd2;
+  outline: none;
+}
+
+.form .column {
+  display: flex;
+  column-gap: 20px;
+}
+
+.form .gender-box {
+  margin-top: 25px;
+}
+
+.gender-box h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #1a1919;
+}
+
+.gender-option {
+  display: flex;
+  gap: 30px;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.gender input {
+  accent-color: #610cd2;
+  cursor: pointer;
+}
+
+.address input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-top: 15px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.address input:focus {
+  border-color: #610cd2;
+  outline: none;
+}
+
+.select-box {
+  margin-top: 15px;
+}
+
+.select-box select {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  font-size: 1rem;
+  color: #707070;
+  background-color: #fff;
+  appearance: none;
+}
+
+.region-postal {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.region-postal input {
+  flex: 1;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.region-postal input:focus {
+  border-color: #610cd2;
+  outline: none;
+}
+.input-box textarea {
+  width: 100%;
+  min-height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 8px;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: 'Montserrat', sans-serif;
+  transition: border 0.3s;
+}
+
+.input-box textarea:focus {
+  border-color: #610cd2;
+  outline: none;
+}
+
+.button-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.form button {
+  flex: 1;
+  height: 50px;
+  background-color: #610cd2;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background-color: #8f51f4;
+}
+
+@media screen and (max-width: 500px) {
+  .form .column,
+  .region-postal,
+  .button-row {
+    flex-direction: column;
+  }
+}
