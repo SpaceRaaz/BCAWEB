@@ -123,6 +123,7 @@ body {
   color: #707070;
   background-color: #fff;
   appearance: none;
+  cursor: pointer;
 }
 
 .region-postal {
